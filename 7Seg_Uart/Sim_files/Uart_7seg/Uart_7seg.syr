@@ -1,0 +1,783 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: Uart_7seg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Uart_7seg.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Uart_7seg"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Uart_7seg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\receiver_counter_generator.v" into library work
+Parsing module <receiver_counter_generator>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\counter_generator.v" into library work
+Parsing module <counter_generator>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\baud_controller.v" into library work
+Parsing module <baud_controller>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\uart_transmitter.v" into library work
+Parsing module <uart_transmitter>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\uart_receiver.v" into library work
+Parsing module <uart_receiver>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\NewClockGenerator.v" into library work
+Parsing module <NewClockGenerator>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\LEDdecoder.v" into library work
+Parsing module <LEDdecoder>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\CounterGenerator.v" into library work
+Parsing module <CounterGenerator>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\CharGenerator.v" into library work
+Parsing module <CharGenerator>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\AnodeSelector.v" into library work
+Parsing module <AnodeSelector>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\uart.v" into library work
+Parsing module <uart>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\FourDigitLEDdriver.v" into library work
+Parsing module <FourDigitLEDdriver>.
+Analyzing Verilog file "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\Uart_7seg.v" into library work
+Parsing module <Uart_7seg>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Uart_7seg>.
+
+Elaborating module <FourDigitLEDdriver>.
+
+Elaborating module <NewClockGenerator>.
+
+Elaborating module <CharGenerator>.
+
+Elaborating module <CounterGenerator>.
+
+Elaborating module <LEDdecoder>.
+
+Elaborating module <AnodeSelector>.
+
+Elaborating module <uart>.
+
+Elaborating module <uart_transmitter>.
+
+Elaborating module <baud_controller>.
+
+Elaborating module <counter_generator>.
+
+Elaborating module <uart_receiver>.
+
+Elaborating module <receiver_counter_generator>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Uart_7seg>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\Uart_7seg.v".
+    Summary:
+	no macro.
+Unit <Uart_7seg> synthesized.
+
+Synthesizing Unit <FourDigitLEDdriver>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\FourDigitLEDdriver.v".
+    Summary:
+	no macro.
+Unit <FourDigitLEDdriver> synthesized.
+
+Synthesizing Unit <NewClockGenerator>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\NewClockGenerator.v".
+    Found 3-bit register for signal <counterClock>.
+    Found 1-bit register for signal <newClock>.
+    Found 3-bit adder for signal <counterClock[2]_GND_3_o_add_1_OUT> created at line 18.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <NewClockGenerator> synthesized.
+
+Synthesizing Unit <CharGenerator>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\CharGenerator.v".
+    Found 4-bit register for signal <char>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <CharGenerator> synthesized.
+
+Synthesizing Unit <CounterGenerator>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\CounterGenerator.v".
+    Found 4-bit register for signal <counter>.
+    Found 4-bit adder for signal <counter[3]_GND_5_o_add_1_OUT> created at line 22.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <CounterGenerator> synthesized.
+
+Synthesizing Unit <LEDdecoder>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\LEDdecoder.v".
+    Found 16x7-bit Read Only RAM for signal <LED>
+    Summary:
+	inferred   1 RAM(s).
+Unit <LEDdecoder> synthesized.
+
+Synthesizing Unit <AnodeSelector>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\7seg\AnodeSelector.v".
+    Summary:
+	no macro.
+Unit <AnodeSelector> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\uart.v".
+    Summary:
+	no macro.
+Unit <uart> synthesized.
+
+Synthesizing Unit <uart_transmitter>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\uart_transmitter.v".
+    Found 4-bit register for signal <next_state>.
+    Found 1-bit register for signal <TxD>.
+    Found 1-bit register for signal <Tx_BUSY>.
+    Found 1-bit register for signal <next_data>.
+    Found finite state machine <FSM_0> for signal <next_state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 25                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 12-to-1 multiplexer for signal <state[3]_PWR_9_o_Mux_33_o> created at line 169.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_transmitter> synthesized.
+
+Synthesizing Unit <baud_controller>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\baud_controller.v".
+    Found 14-bit register for signal <counter>.
+    Found 1-bit register for signal <sample_ENABLE>.
+    Found 14-bit adder for signal <counter[13]_GND_10_o_add_3_OUT> created at line 54.
+    Found 17-bit comparator equal for signal <GND_10_o_baud_rate[16]_equal_3_o> created at line 47
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <baud_controller> synthesized.
+
+Synthesizing Unit <counter_generator>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\counter_generator.v".
+    Found 4-bit register for signal <bit_cnt>.
+    Found 4-bit register for signal <counter>.
+    Found 4-bit adder for signal <counter[3]_GND_11_o_add_3_OUT> created at line 20.
+    Found 4-bit adder for signal <bit_cnt[3]_GND_11_o_add_5_OUT> created at line 23.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <counter_generator> synthesized.
+
+Synthesizing Unit <uart_receiver>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\uart_receiver.v".
+    Found 1-bit register for signal <f_sampling<2>>.
+    Found 1-bit register for signal <f_sampling<1>>.
+    Found 1-bit register for signal <f_sampling<0>>.
+    Found 1-bit register for signal <next_data>.
+    Found 8-bit register for signal <DATA>.
+    Found 4-bit register for signal <next_state>.
+    Found 1-bit register for signal <Rx_FERROR>.
+    Found 1-bit register for signal <Rx_PERROR>.
+    Found 1-bit register for signal <Rx_VALID>.
+    Found finite state machine <FSM_1> for signal <next_state>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 31                                             |
+    | Inputs             | 15                                             |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit comparator equal for signal <n0044> created at line 315
+    Summary:
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  16 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_receiver> synthesized.
+
+Synthesizing Unit <receiver_counter_generator>.
+    Related source file is "D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\uart\receiver_counter_generator.v".
+    Found 4-bit register for signal <bit_cnt>.
+    Found 4-bit register for signal <counter>.
+    Found 4-bit adder for signal <counter[3]_GND_13_o_add_3_OUT> created at line 20.
+    Found 4-bit adder for signal <bit_cnt[3]_GND_13_o_add_5_OUT> created at line 23.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <receiver_counter_generator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 8
+ 14-bit adder                                          : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 5
+# Registers                                            : 23
+ 1-bit register                                        : 13
+ 14-bit register                                       : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 6
+ 8-bit register                                        : 1
+# Comparators                                          : 3
+ 1-bit comparator equal                                : 1
+ 17-bit comparator equal                               : 2
+# Multiplexers                                         : 25
+ 1-bit 12-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 16
+ 14-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 2
+# Xors                                                 : 2
+ 1-bit xor8                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CounterGenerator>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <CounterGenerator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <LEDdecoder>.
+INFO:Xst:3231 - The small RAM <Mram_LED> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <char>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <LED>           |          |
+    -----------------------------------------------------------------------
+Unit <LEDdecoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <NewClockGenerator>.
+The following registers are absorbed into counter <counterClock>: 1 register on signal <counterClock>.
+Unit <NewClockGenerator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <baud_controller>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <baud_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_generator>.
+The following registers are absorbed into counter <bit_cnt>: 1 register on signal <bit_cnt>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <counter_generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <receiver_counter_generator>.
+The following registers are absorbed into counter <bit_cnt>: 1 register on signal <bit_cnt>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <receiver_counter_generator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 8
+ 14-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 5
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Comparators                                          : 3
+ 1-bit comparator equal                                : 1
+ 17-bit comparator equal                               : 2
+# Multiplexers                                         : 19
+ 1-bit 12-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 16
+ 4-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
+# Xors                                                 : 2
+ 1-bit xor8                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart/DUT_Transmitter/FSM_0> on signal <next_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart/DUT_Receiver/FSM_1> on signal <next_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 1110  | 1110
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+ 1101  | 1101
+-------------------
+
+Optimizing unit <Uart_7seg> ...
+
+Optimizing unit <uart_transmitter> ...
+
+Optimizing unit <counter_generator> ...
+
+Optimizing unit <uart_receiver> ...
+
+Optimizing unit <receiver_counter_generator> ...
+
+Optimizing unit <CharGenerator> ...
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/sample_ENABLE> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/sample_ENABLE> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_0> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_0> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_1> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_1> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_2> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_2> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_3> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_3> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_4> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_4> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_5> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_5> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_6> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_6> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_7> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_7> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_8> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_8> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_9> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_9> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_10> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_10> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_11> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_11> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_12> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_12> 
+INFO:Xst:2261 - The FF/Latch <uart/DUT_Transmitter/baud_controller_tx_instance/counter_13> in Unit <Uart_7seg> is equivalent to the following FF/Latch, which will be removed : <uart/DUT_Receiver/baud_controller_rx_instance/counter_13> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Uart_7seg, actual ratio is 1.
+FlipFlop uart/DUT_Receiver/next_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop uart/DUT_Receiver/next_state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop uart/DUT_Receiver/next_state_FSM_FFd3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Uart_7seg.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 181
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 2
+#      LUT2                        : 9
+#      LUT3                        : 24
+#      LUT4                        : 27
+#      LUT5                        : 37
+#      LUT6                        : 43
+#      MUXCY                       : 13
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 14
+# FlipFlops/Latches                : 72
+#      FD                          : 7
+#      FDC                         : 37
+#      FDCE                        : 24
+#      FDP                         : 2
+#      FDPE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 10
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              72  out of  18224     0%  
+ Number of Slice LUTs:                  145  out of   9112     1%  
+    Number used as Logic:               145  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    154
+   Number with an unused Flip Flop:      82  out of    154    53%  
+   Number with an unused LUT:             9  out of    154     5%  
+   Number of fully used LUT-FF pairs:    63  out of    154    40%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    232    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------+----------------------------------------------------+-------+
+Clock Signal                                 | Clock buffer(FF name)                              | Load  |
+---------------------------------------------+----------------------------------------------------+-------+
+clk                                          | BUFGP                                              | 68    |
+FourDigitLEDdriver/NewClockGenerator/newClock| NONE(FourDigitLEDdriver/CounterGenerator/counter_0)| 4     |
+---------------------------------------------+----------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.367ns (Maximum Frequency: 228.997MHz)
+   Minimum input arrival time before clock: 4.737ns
+   Maximum output required time after clock: 4.930ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.367ns (frequency: 228.997MHz)
+  Total number of paths / destination ports: 2217 / 94
+-------------------------------------------------------------------------
+Delay:               4.367ns (Levels of Logic = 3)
+  Source:            uart/DUT_Receiver/next_state_FSM_FFd4 (FF)
+  Destination:       uart/DUT_Receiver/f_sampling_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: uart/DUT_Receiver/next_state_FSM_FFd4 to uart/DUT_Receiver/f_sampling_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             26   0.447   1.207  uart/DUT_Receiver/next_state_FSM_FFd4 (uart/DUT_Receiver/next_state_FSM_FFd4)
+     LUT3:I2->O            1   0.205   0.580  uart/DUT_Receiver/_n0167_inv2_SW0 (N01)
+     LUT6:I5->O            2   0.205   0.617  uart/DUT_Receiver/_n0167_inv2 (uart/DUT_Receiver/_n0167_inv2)
+     LUT6:I5->O            1   0.205   0.579  uart/DUT_Receiver/_n0237_inv1 (uart/DUT_Receiver/_n0237_inv)
+     FDPE:CE                   0.322          uart/DUT_Receiver/f_sampling_0
+    ----------------------------------------
+    Total                      4.367ns (1.384ns logic, 2.983ns route)
+                                       (31.7% logic, 68.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'FourDigitLEDdriver/NewClockGenerator/newClock'
+  Clock period: 2.242ns (frequency: 446.100MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               2.242ns (Levels of Logic = 1)
+  Source:            FourDigitLEDdriver/CounterGenerator/counter_0 (FF)
+  Destination:       FourDigitLEDdriver/CounterGenerator/counter_0 (FF)
+  Source Clock:      FourDigitLEDdriver/NewClockGenerator/newClock rising
+  Destination Clock: FourDigitLEDdriver/NewClockGenerator/newClock rising
+
+  Data Path: FourDigitLEDdriver/CounterGenerator/counter_0 to FourDigitLEDdriver/CounterGenerator/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.447   0.908  FourDigitLEDdriver/CounterGenerator/counter_0 (FourDigitLEDdriver/CounterGenerator/counter_0)
+     INV:I->O              1   0.206   0.579  FourDigitLEDdriver/CounterGenerator/Mcount_counter_xor<0>11_INV_0 (Result<0>1)
+     FDC:D                     0.102          FourDigitLEDdriver/CounterGenerator/counter_0
+    ----------------------------------------
+    Total                      2.242ns (0.755ns logic, 1.487ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 91 / 64
+-------------------------------------------------------------------------
+Offset:              4.737ns (Levels of Logic = 6)
+  Source:            Tx_DATA<2> (PAD)
+  Destination:       uart/DUT_Transmitter/TxD (FF)
+  Destination Clock: clk rising
+
+  Data Path: Tx_DATA<2> to uart/DUT_Transmitter/TxD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.981  Tx_DATA_2_IBUF (Tx_DATA_2_IBUF)
+     LUT6:I0->O            1   0.203   0.924  uart/DUT_Transmitter/Mmux_state[3]_PWR_9_o_Mux_33_o24 (uart/DUT_Transmitter/Mmux_state[3]_PWR_9_o_Mux_33_o23)
+     LUT6:I1->O            1   0.203   0.000  uart/DUT_Transmitter/Mmux_state[3]_PWR_9_o_Mux_33_o26_G (N34)
+     MUXF7:I1->O           2   0.140   0.617  uart/DUT_Transmitter/Mmux_state[3]_PWR_9_o_Mux_33_o26 (uart/DUT_Transmitter/Mmux_state[3]_PWR_9_o_Mux_33_o25)
+     LUT6:I5->O            1   0.205   0.000  uart/DUT_Transmitter/Mmux_state[3]_PWR_9_o_Mux_33_o27_G (N36)
+     MUXF7:I1->O           1   0.140   0.000  uart/DUT_Transmitter/Mmux_state[3]_PWR_9_o_Mux_33_o27 (uart/DUT_Transmitter/state[3]_PWR_9_o_Mux_33_o)
+     FD:D                      0.102          uart/DUT_Transmitter/TxD
+    ----------------------------------------
+    Total                      4.737ns (2.215ns logic, 2.522ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FourDigitLEDdriver/NewClockGenerator/newClock'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.298ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       FourDigitLEDdriver/CounterGenerator/counter_0 (FF)
+  Destination Clock: FourDigitLEDdriver/NewClockGenerator/newClock rising
+
+  Data Path: reset to FourDigitLEDdriver/CounterGenerator/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            65   1.222   1.646  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.430          FourDigitLEDdriver/CounterGenerator/counter_0
+    ----------------------------------------
+    Total                      3.298ns (1.652ns logic, 1.646ns route)
+                                       (50.1% logic, 49.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FourDigitLEDdriver/NewClockGenerator/newClock'
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Offset:              4.930ns (Levels of Logic = 2)
+  Source:            FourDigitLEDdriver/CounterGenerator/counter_1 (FF)
+  Destination:       an3 (PAD)
+  Source Clock:      FourDigitLEDdriver/NewClockGenerator/newClock rising
+
+  Data Path: FourDigitLEDdriver/CounterGenerator/counter_1 to an3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.447   1.130  FourDigitLEDdriver/CounterGenerator/counter_1 (FourDigitLEDdriver/CounterGenerator/counter_1)
+     LUT4:I0->O            1   0.203   0.579  FourDigitLEDdriver/AnodeSelector/an31 (an3_OBUF)
+     OBUF:I->O                 2.571          an3_OBUF (an3)
+    ----------------------------------------
+    Total                      4.930ns (3.221ns logic, 1.709ns route)
+                                       (65.3% logic, 34.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              4.821ns (Levels of Logic = 2)
+  Source:            FourDigitLEDdriver/CharGenerator/char_2 (FF)
+  Destination:       a (PAD)
+  Source Clock:      clk rising
+
+  Data Path: FourDigitLEDdriver/CharGenerator/char_2 to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.021  FourDigitLEDdriver/CharGenerator/char_2 (FourDigitLEDdriver/CharGenerator/char_2)
+     LUT4:I0->O            1   0.203   0.579  FourDigitLEDdriver/LEDdecoder/Mram_LED51 (b_OBUF)
+     OBUF:I->O                 2.571          b_OBUF (b)
+    ----------------------------------------
+    Total                      4.821ns (3.221ns logic, 1.600ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock FourDigitLEDdriver/NewClockGenerator/newClock
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+FourDigitLEDdriver/NewClockGenerator/newClock|    2.242|         |         |         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+FourDigitLEDdriver/NewClockGenerator/newClock|    1.953|         |         |         |
+clk                                          |    4.367|         |         |         |
+---------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.99 secs
+ 
+--> 
+
+Total memory usage is 331640 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\Sim_files\Uart_7seg\Uart_7seg.ncd
+OUTFILE=D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\Sim_files\Uart_7seg\Uart_7seg.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Giannis\UTH\4o etos\Digital Electronics\7Seg_Uart\Sim_files\Uart_7seg
+LICENSE=WebPack
+USER_INFO=211336010_0_0_956

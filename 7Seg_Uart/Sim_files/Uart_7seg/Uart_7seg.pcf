@@ -1,0 +1,96 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Feb 06 11:30:16 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "e" LOCATE = SITE "M14" LEVEL 1;
+COMP "f" LOCATE = SITE "N14" LEVEL 1;
+COMP "g" LOCATE = SITE "L14" LEVEL 1;
+COMP "dp" LOCATE = SITE "M13" LEVEL 1;
+COMP "Tx_WR" LOCATE = SITE "A8" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "Rx_FERROR" LOCATE = SITE "U16" LEVEL 1;
+COMP "Tx_BUSY" LOCATE = SITE "R11" LEVEL 1;
+COMP "Tx_DATA<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Tx_DATA<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "an0" LOCATE = SITE "N16" LEVEL 1;
+COMP "Tx_DATA<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "an1" LOCATE = SITE "N15" LEVEL 1;
+COMP "Rx_PERROR" LOCATE = SITE "U15" LEVEL 1;
+COMP "an2" LOCATE = SITE "P18" LEVEL 1;
+COMP "Tx_DATA<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "an3" LOCATE = SITE "P17" LEVEL 1;
+COMP "Tx_DATA<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "Tx_DATA<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "Tx_DATA<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "Tx_DATA<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "reset" LOCATE = SITE "D9" LEVEL 1;
+COMP "Rx_VALID" LOCATE = SITE "M11" LEVEL 1;
+COMP "a" LOCATE = SITE "T17" LEVEL 1;
+COMP "b" LOCATE = SITE "T18" LEVEL 1;
+COMP "c" LOCATE = SITE "U17" LEVEL 1;
+COMP "d" LOCATE = SITE "U18" LEVEL 1;
+TIMEGRP clk = BEL "FourDigitLEDdriver/NewClockGenerator/counterClock_0" BEL
+        "FourDigitLEDdriver/NewClockGenerator/counterClock_1" BEL
+        "FourDigitLEDdriver/NewClockGenerator/counterClock_2" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_13" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_12" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_11" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_10" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_9" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_8" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_7" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_6" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_5" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_4" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_3" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_2" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_1" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/counter_0" BEL
+        "uart/DUT_Transmitter/next_state_FSM_FFd1" BEL
+        "uart/DUT_Transmitter/next_state_FSM_FFd2" BEL
+        "uart/DUT_Transmitter/next_state_FSM_FFd3" BEL
+        "uart/DUT_Transmitter/next_state_FSM_FFd4" BEL
+        "uart/DUT_Transmitter/baud_controller_tx_instance/sample_ENABLE" BEL
+        "uart/DUT_Transmitter/TxD" BEL "uart/DUT_Transmitter/next_data" BEL
+        "uart/DUT_Transmitter/Tx_BUSY" BEL
+        "uart/DUT_Transmitter/counter_generator/counter_3" BEL
+        "uart/DUT_Transmitter/counter_generator/counter_2" BEL
+        "uart/DUT_Transmitter/counter_generator/counter_1" BEL
+        "uart/DUT_Transmitter/counter_generator/counter_0" BEL
+        "uart/DUT_Transmitter/counter_generator/bit_cnt_3" BEL
+        "uart/DUT_Transmitter/counter_generator/bit_cnt_2" BEL
+        "uart/DUT_Transmitter/counter_generator/bit_cnt_1" BEL
+        "uart/DUT_Transmitter/counter_generator/bit_cnt_0" BEL
+        "uart/DUT_Receiver/next_state_FSM_FFd2" BEL
+        "uart/DUT_Receiver/next_state_FSM_FFd3" BEL
+        "uart/DUT_Receiver/next_state_FSM_FFd1" BEL
+        "uart/DUT_Receiver/next_state_FSM_FFd4" BEL
+        "uart/DUT_Receiver/Rx_FERROR" BEL "uart/DUT_Receiver/f_sampling_0" BEL
+        "uart/DUT_Receiver/f_sampling_2" BEL "uart/DUT_Receiver/Rx_VALID" BEL
+        "uart/DUT_Receiver/next_data" BEL "uart/DUT_Receiver/DATA_7" BEL
+        "uart/DUT_Receiver/DATA_6" BEL "uart/DUT_Receiver/DATA_5" BEL
+        "uart/DUT_Receiver/DATA_4" BEL "uart/DUT_Receiver/DATA_3" BEL
+        "uart/DUT_Receiver/DATA_2" BEL "uart/DUT_Receiver/DATA_1" BEL
+        "uart/DUT_Receiver/DATA_0" BEL
+        "uart/DUT_Receiver/receiver_counter_generator/counter_3" BEL
+        "uart/DUT_Receiver/receiver_counter_generator/counter_2" BEL
+        "uart/DUT_Receiver/receiver_counter_generator/counter_1" BEL
+        "uart/DUT_Receiver/receiver_counter_generator/counter_0" BEL
+        "uart/DUT_Receiver/receiver_counter_generator/bit_cnt_3" BEL
+        "uart/DUT_Receiver/receiver_counter_generator/bit_cnt_2" BEL
+        "uart/DUT_Receiver/receiver_counter_generator/bit_cnt_1" BEL
+        "uart/DUT_Receiver/receiver_counter_generator/bit_cnt_0" BEL
+        "FourDigitLEDdriver/CharGenerator/char_3" BEL
+        "FourDigitLEDdriver/CharGenerator/char_2" BEL
+        "FourDigitLEDdriver/CharGenerator/char_1" BEL
+        "FourDigitLEDdriver/CharGenerator/char_0" BEL
+        "uart/DUT_Receiver/next_state_FSM_FFd3_1" BEL
+        "uart/DUT_Receiver/next_state_FSM_FFd2_1" BEL
+        "uart/DUT_Receiver/next_state_FSM_FFd1_1" BEL
+        "FourDigitLEDdriver/NewClockGenerator/newClock" BEL
+        "uart/DUT_Receiver/f_sampling_1" BEL "uart/DUT_Receiver/Rx_PERROR" BEL
+        "clk_BUFGP/BUFG";
+TS_clock = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,45 @@
+xst -intstyle ise -ifn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.xst" -ofn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.syr" 
+xst -intstyle ise -ifn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.xst" -ofn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.syr" 
+xst -intstyle ise -ifn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.xst" -ofn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "Uart_7seg.ngc" Uart_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Uart_7seg_map.ncd Uart_7seg.ngd Uart_7seg.pcf 
+par -w -intstyle ise -ol high -mt off Uart_7seg_map.ncd Uart_7seg.ncd Uart_7seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Uart_7seg.twx Uart_7seg.ncd -o Uart_7seg.twr Uart_7seg.pcf 
+bitgen -intstyle ise -f Uart_7seg.ut Uart_7seg.ncd 
+xst -intstyle ise -ifn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.xst" -ofn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "Uart_7seg.ngc" Uart_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Uart_7seg_map.ncd Uart_7seg.ngd Uart_7seg.pcf 
+par -w -intstyle ise -ol high -mt off Uart_7seg_map.ncd Uart_7seg.ncd Uart_7seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Uart_7seg.twx Uart_7seg.ncd -o Uart_7seg.twr Uart_7seg.pcf 
+bitgen -intstyle ise -f Uart_7seg.ut Uart_7seg.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/uart.ucf" -p xc6slx16-csg324-3 "Uart_7seg.ngc" Uart_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Uart_7seg_map.ncd Uart_7seg.ngd Uart_7seg.pcf 
+par -w -intstyle ise -ol high -mt off Uart_7seg_map.ncd Uart_7seg.ncd Uart_7seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Uart_7seg.twx Uart_7seg.ncd -o Uart_7seg.twr Uart_7seg.pcf 
+bitgen -intstyle ise -f Uart_7seg.ut Uart_7seg.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Uart_7seg.ucf" -p xc6slx16-csg324-3 "Uart_7seg.ngc" Uart_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Uart_7seg_map.ncd Uart_7seg.ngd Uart_7seg.pcf 
+par -w -intstyle ise -ol high -mt off Uart_7seg_map.ncd Uart_7seg.ncd Uart_7seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Uart_7seg.twx Uart_7seg.ncd -o Uart_7seg.twr Uart_7seg.pcf 
+bitgen -intstyle ise -f Uart_7seg.ut Uart_7seg.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Uart_7seg.ucf" -p xc6slx16-csg324-3 "Uart_7seg.ngc" Uart_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Uart_7seg_map.ncd Uart_7seg.ngd Uart_7seg.pcf 
+par -w -intstyle ise -ol high -mt off Uart_7seg_map.ncd Uart_7seg.ncd Uart_7seg.pcf 
+xst -intstyle ise -ifn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.xst" -ofn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Uart_7seg.ucf" -p xc6slx16-csg324-3 "Uart_7seg.ngc" Uart_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Uart_7seg_map.ncd Uart_7seg.ngd Uart_7seg.pcf 
+par -w -intstyle ise -ol high -mt off Uart_7seg_map.ncd Uart_7seg.ncd Uart_7seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Uart_7seg.twx Uart_7seg.ncd -o Uart_7seg.twr Uart_7seg.pcf 
+bitgen -intstyle ise -f Uart_7seg.ut Uart_7seg.ncd 
+xst -intstyle ise -ifn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.xst" -ofn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Uart_7seg.ucf" -p xc6slx16-csg324-3 "Uart_7seg.ngc" Uart_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Uart_7seg_map.ncd Uart_7seg.ngd Uart_7seg.pcf 
+par -w -intstyle ise -ol high -mt off Uart_7seg_map.ncd Uart_7seg.ncd Uart_7seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Uart_7seg.twx Uart_7seg.ncd -o Uart_7seg.twr Uart_7seg.pcf 
+bitgen -intstyle ise -f Uart_7seg.ut Uart_7seg.ncd 
+xst -intstyle ise -ifn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.xst" -ofn "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Sim_files/Uart_7seg/Uart_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "D:/Giannis/UTH/4o etos/Digital Electronics/7Seg_Uart/Uart_7seg.ucf" -p xc6slx16-csg324-3 "Uart_7seg.ngc" Uart_7seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Uart_7seg_map.ncd Uart_7seg.ngd Uart_7seg.pcf 
+par -w -intstyle ise -ol high -mt off Uart_7seg_map.ncd Uart_7seg.ncd Uart_7seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Uart_7seg.twx Uart_7seg.ncd -o Uart_7seg.twr Uart_7seg.pcf 
+bitgen -intstyle ise -f Uart_7seg.ut Uart_7seg.ncd 
